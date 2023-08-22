@@ -33,6 +33,10 @@ jobs:
         with:
           name: my-dotnet-app
           path: ${{env.DOTNET_ROOT}}/myapp
+      - name: Debugging Output
+        run: |
+          echo "Contents of the artifact directory:"
+          ls -R ${{env.DOTNET_ROOT}}/myapp
 
   deploy:
     runs-on: ubuntu-latest
