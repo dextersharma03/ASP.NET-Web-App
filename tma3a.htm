@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>COMP 466 Assignment 3</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+    <!-- Header with logo or name -->
+    <header>
+        <img class="logo" src="./images/img1.jpg">
+        <h1>COMP 466 Assignment 3</h1>
+    </header>
+
+    <!-- Navigation menu -->
+    <nav>
+        <div class="nav-left">
+            <a href="tma3a.htm">Home</a>
+        </div>
+        <div class="nav-right">
+            <a href="./part1/PersistentCookie.aspx">Part 1</a>
+            <a href="./part2/Slideshow.aspx">Part 2</a>
+            <a href="./part3/ComputerHub.aspx">Part 3</a>
+            <a href="./part4/ComputerHub.aspx">Part 4</a>
+        </div>
+    </nav>
+
+    <!-- Main content -->
+    <main>
+        <h2>Welcome to the COMP 466 Assignment 3!</h2>
+        <br>
+
+        <section id="cover-section">
+            <p>Assignment can be accessed at: <strong><a href="https://tma3.azurewebsites.net/tma3.html" target="_blank">https://tma3.azurewebsites.net/tma3.html</a></strong></p>
+            <h2>Assignment Details</h2>
+            <p><strong>Course Number and Name:</strong> COMP 466 Advanced Technologies for Web-Based Systems</p>
+            <p><strong>Assignment Number:</strong> Assignment 3</p>
+            <p><strong>Your Name:</strong> [Your Name]</p>
+            <p><strong>Student ID Number:</strong> [Your Student ID]</p>
+            <p><strong>Date You Began Working on the Assignment:</strong> [Start Date]</p>
+            <p><strong>Date You Completed the Assignment:</strong> [Completion Date]</p>
+            <p><strong>Estimated Hours Spent on the Assignment:</strong> [Hours Spent]</p>
+        </section>
+        <br>
+        <section id="project-section">
+            <h2>Assignment Project and Requirements</h2>
+            <p>
+                The following duties had to be completed:
+            </p><p>
+                Part 1: Develop a web application that keeps track of user's hits to the site, their IP, and current time zone.<br>
+                Part 2: Develop a slideshow web app with shuffle, play, stop, next, and prev controls.<br>
+                Part 3: Develop a computer store web app for user login, product purchase, and configuration.<br>
+                Part 4: Upgrade the computer store to use a database for data management.
+            </p>
+        </section>
+        <br>
+        <!-- Part 1: Cookie Hit Counter -->
+        <h2>Part 1: Cookie Hit Counter</h2>
+        <p>Original Description: Create a web app that keeps track of user's hits to the site, their IP, and current time zone.</p>
+        <p>Interpretation: This part was quite straightforward and implemented the same way.</p>
+        <p>Implementation: I made use of ASP.NET's cookies API and their API for obtaining IP Addresses. The local time was done on the javascript side.</p>
+        <p>Guide: Click refresh to update the counter. Click Reset to set the counter back to 0</p>
+        <a href="./part1/PersistentCookie.aspx">Part 1!</a>
+        <br><br>
+        <!-- Part 2: Slide Show -->
+        <h2>Part 2: Slide Show</h2>
+        <p>Original Description: Create a web app that implements a slideshow (of about 20 pictures). Allowing the user to shuffle, play, stop, click next, or prev.</p>
+        <p>Interpretation: This part was easier to implement than the assignment 2 version! The instructions were straightforward and implemented as instructed</p>
+        <p>Implementation: I made use the update panel to partially refresh the image from the database. The slideshow automatically starts and uses a timer set to 500ms for each image</p>
+        <p>Guide: Click any button to control the slide show.</p>
+        <a href="./part2/Slideshow.aspx">Part 2!</a>
+        <br><br>
+        <!-- Part 3: Computer Store (First Implementation) -->
+        <h2>Part 3: Computer Store (First Implementation)</h2>
+        <p>Original Description: Create a web app similar to a computer store, where users can login, create, configure, and buy computer parts and entire computers.</p>
+        <p>Interpretation: This version of the store is hardcoded and does not use a database. This is quite challenging due to the data volume and cookies were used extensively.</p>
+        <p>Implementation: I utilized many cookies and helper classes (Constants.css) to manage data. All images were sourced from iconsfinder.com.</p>
+        <p>Guide: Navigate to Products > Computers to view available laptops. Configure and add them to your cart. Products > Computer Parts lists parts that can be added to your cart. Use the contact tab to view contacts. The feedback form validates input before submission. The login/create user option is accessible via "Log In" or your username. This page validates login/sign up and enables logout.</p>
+        <a href="./part3/ComputerHub.aspx">Part 3!</a>
+        <br><br>
+        <!-- Part 4: Final Computer Store -->
+        <h2>Part 4: Final Computer Store</h2>
+        <p>Original Description: Create a web app implementing a database-driven computer store (upgrade from Part 3)</p>
+        <p>Interpretation: This was easier to implement than Part 3. The store now includes password recovery and a user-friendly cart with database integration.</p>
+        <p>Implementation: My database, defined in tableSetup.sql, facilitates product, order, and customer management. The implementation largely resembles Part 3 but with database integration. Dynamic creation of controls in C# server code was challenging, yet manageable with practice.</p>
+        <p>Guide: Similar to Part 3. New features include password recovery (accessed on login page). The cart is improved, allowing item quantity updates and automatic cart/database synchronization.</p>
+        <a href="./part4/ComputerHub.aspx">Part 4!</a>
+        <br><br>
+        <h2>Thank you Dr. Wang for your guidance! It was a rewarding learning experience.</h2>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 Dikshit Sharma - Web App Development. All rights reserved.</p>
+    </footer>
+</body>
+</html>

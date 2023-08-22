@@ -1,0 +1,16 @@
+﻿#login, #createAccount {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 20px; /* Added margin to create separation between sections */
+    vertical-align: top;
+    width: calc(50% - 15px); /* Adjusted width calculation to include margin and spacing */
+    min-height: 220px; /* Ensuring the sections have some minimum height */
+    background-color: lightgrey;
+    padding: 20px;
+    border-radius: 10px;
+    box-sizing: border-box; /* Include padding in the element's width and height */
+}
+
+#btnLogout {
+    margin-top: 20px;
+}

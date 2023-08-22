@@ -1,0 +1,24 @@
+﻿#content {
+    text-align: center;
+}
+
+.aspImg {
+    display: block; /* Centers the image horizontally */
+    margin: 0 auto; /* Centers the image horizontally */
+    max-width: 70%; /* Adjust the value to control the image size */
+    height: auto;
+}
+
+.caption {
+    font-size: 30px;
+}
+
+.aspImgCtrls {
+    display: inline-block;
+    width: 40px;
+    margin-top: 1%;
+}
+
+.hiddenPhotoId {
+    display: none;
+}

@@ -1,0 +1,309 @@
+/*Uniform style across all web pages*/
+
+/* Reset default browser styles */
+body, h1, h2, h3, h4, h5, h6, p, ul, li, form, input {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    background: linear-gradient(45deg, #e8e8e8, #f8f8f8);
+    color: #333333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header styles */
+header {
+    background: linear-gradient(45deg, #003366, #0059b3);
+    padding: 20px;
+    text-align: center;
+    color: #ffffff;
+    display: flex;
+    justify-content: center; /* Center the header horizontally */
+    align-items: center;
+}
+
+    header .logo {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-right: 20px; /* Add margin to create spacing between the logo and the h1 */
+    }
+
+    header h1 {
+        display: flex;
+        align-items: center; /* Center the h1 text vertically with the logo */
+        font-size: 24px;
+        margin: 0;
+    }
+
+/* Navigation styles */
+nav {
+    background-color: #f2f2f2;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button[name="logout"] {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+    button[name="logout"]:hover {
+        background-color: #c82333;
+    }
+
+.nav-left {
+    margin-right: auto;
+}
+
+.nav-right {
+    margin-left: auto;
+}
+
+nav a {
+    color: #002147;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 3px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+    nav a:hover {
+        background-color: #dcdcdc;
+        color: #00162e;
+    }
+
+/* Main section styles */
+main {
+    flex: 1;
+    margin: 20px;
+    padding: 20px;
+    background: linear-gradient(45deg, #ffffff, #f2f2f2);
+    border-radius: 5px;
+}
+
+    main h2 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    main p {
+        margin-bottom: 10px;
+        border-left: 3px solid #003366; /* Add a left border */
+        padding-left: 10px; /* Add padding to the left */
+    }
+
+/* List styles */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+    li a {
+        display: inline-block;
+        padding: 5px 10px;
+        text-decoration: none;
+        color: #002147;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+        li a:hover {
+            background-color: #e8e8e8;
+            color: #00162e;
+        }
+
+/* Form styles */
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+input[type="submit"] {
+    background: linear-gradient(45deg, #003366, #0059b3);
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button {
+    background-color: linear-gradient(45deg, #003366, #0059b3);
+    border: none;
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+    button:hover {
+        background-color: #0056b3;
+    }
+
+    button[name="add"] {
+        background-color: #0056b3;
+        color: #ffffff;
+    }
+
+    button[name="cancel"] {
+        background-color: #6c757d;
+    }
+
+        button[name="cancel"]:hover {
+            background-color: #5a6268;
+        }
+
+/* Additional Styles */
+
+h1 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Add text shadow */
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+    ul li {
+        position: relative;
+        padding-left: 20px;
+        margin-bottom: 10px;
+    }
+
+        ul li:before {
+            /*content: '\2022';  Add bullet character */
+            position: absolute;
+            left: 0;
+            color: #003366;
+        }
+
+section {
+    margin-bottom: 40px;
+}
+
+    section h2 {
+        border-bottom: 1px solid #003366; /* Add a bottom border */
+        padding-bottom: 10px; /* Add padding to the bottom */
+    }
+
+    section p {
+        text-align: justify;
+    }
+
+/* Add animated gradient effect to main section */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+main {
+    animation: gradientAnimation 8s linear infinite;
+}
+
+/* Footer styles */
+footer {
+    background: linear-gradient(45deg, #003366, #0059b3);
+    padding: 20px;
+    text-align: center;
+    color: #ffffff;
+    position: relative;
+    overflow: hidden;
+}
+
+    footer p {
+        position: relative;
+        display: inline-block;
+        white-space: nowrap;
+        animation: waveAnimation 8s linear infinite;
+    }
+
+@keyframes waveAnimation {
+    0% {
+        transform: translateX(0%);
+    }
+
+    50% {
+        transform: translateX(-25%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+/* Wave styles */
+footer::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background-image: linear-gradient(to right, transparent 0%, #ffffff 50%, transparent 100%);
+    background-size: 200% 20px;
+    animation: waveEffect 1s linear infinite;
+}
+
+@keyframes waveEffect {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 200% 0;
+    }
+}

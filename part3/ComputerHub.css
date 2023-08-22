@@ -1,0 +1,344 @@
+﻿/* Main section styles */
+#content {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 20px;
+    background-color: #f7f7f7;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Computer navigation section styles */
+#computerNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #2980b9, #3498db);
+    padding: 10px 0;
+    color: white;
+    border-radius: 10px;
+}
+
+.user-panel {
+    display: flex;
+    align-items: center;
+}
+
+.loginSignup {
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 25px;
+    color: white;
+    padding: 8px 15px;
+    font-size: 14px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+    .loginSignup:hover {
+        background-color: white;
+        color: #2980b9;
+    }
+
+.cart-icon {
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+}
+
+.cart-label {
+    font-size: 14px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+    margin-left: 5px;
+    border-radius: 50%; /* Add curved borders */
+    border: 2px solid #3498db; /* Add a border with a color of your choice */
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow effect */
+    transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s; /* Add smooth transitions */
+    /* Add a hover effect */
+    cursor: pointer;
+}
+
+    .logo-image:hover {
+        transform: scale(1.1); /* Increase size slightly on hover */
+        border-color: #e74c3c; /* Change border color on hover */
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
+    }
+
+
+.store-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    margin: 5px; /* Remove the default margin */
+    display: flex;
+    align-items: center;
+}
+
+.navigation {
+    flex-grow: 1;
+    text-align: right;
+}
+
+.menu {
+    list-style: none; /* Remove bullet points */
+    padding: 0;
+    margin: 0;
+    text-align: right; /* Align menu items to the right */
+}
+
+    .menu > li {
+        display: inline;
+        margin-left: 20px;
+    }
+
+.menuitem_text {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease-in-out;
+    border-radius: 25px;
+    padding: 8px 15px;
+}
+
+    .menuitem_text:hover {
+        color: #ddd;
+        background-color: royalblue;
+    }
+
+/* Computer content section styles */
+.content-section {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.welcome-message {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+#computerContent {
+    width: calc(53.33% - 20px); /* Adjust this value to control the width of each product */
+    margin: 0 auto; /* Center align the section */
+    text-align: center;
+    padding: 20px 0; /* Add padding to the top and bottom */
+    background-color: #f5f5f5;
+}
+
+    #computerContent h2 {
+        font-size: 28px;
+        margin-bottom: 20px;
+        color: #333; /* Adjust the color as needed */
+    }
+
+    #computerContent img {
+        max-width: 80%; /* Resize the image to fit its container */
+        height: auto;
+        margin-bottom: 10px; /* Add some spacing below the image */
+    }
+
+#computerContent-contact, #computerContent_feedback, #computerContent_login {
+    margin: 0 auto; /* Center align the section */
+    text-align: left;
+    padding: 20px 0; /* Add padding to the top and bottom */
+    background-color: #f5f5f5;
+}
+
+    #computerContent-contact h2, #computerContent_feedback h2, #computerContent_login h2 {
+        font-size: 28px;
+        margin-bottom: 20px;
+        color: #333; /* Adjust the color as needed */
+    }
+    #computerContent-contact h1, #computerContent_feedback h1, #computerContent_login h1 {
+        text-align: center;
+    }
+
+.compBanner {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, filter 0.3s;
+}
+
+
+/* Style for product sections */
+.product-section {
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+    .product-section h2 {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+.product-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.product {
+    width: calc(33.33% - 20px); /* Adjust this value to control the width of each product */
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+    .product img {
+        max-width: 100px;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+.product-caption {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.product-price {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #e74c3c; /* Adjust the color as needed */
+}
+
+.product-link {
+    text-decoration: none;
+    color: #3498db; /* Adjust the color as needed */
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.product-link:hover {
+    color: #1a75ff; /* Adjust the color as needed */
+}
+
+.AddToCart {
+    width: calc(53.33% - 10px); /* Adjust this value to control the width of each product */
+    background-color: #F1FAFF;
+    border: 2px solid white;
+    border-radius: 25px;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+    .AddToCart:hover {
+        background-color: #2980b9;
+        color: white;
+        transform: scale(1.05);
+        border-color: #3498db;
+    }
+
+    .AddToCart img {
+        max-width: 100%; /* Resize the image to fit its container */
+        height: auto;
+        margin-bottom: 10px; /* Add some spacing below the image */
+    }
+
+#productOptions {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 500px; /* Adjust maximum width as needed */
+    margin: 0 auto;
+}
+
+    #productOptions td {
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    #productOptions tr:last-child td {
+        border-bottom: none;
+    }
+
+    #productOptions td:first-child {
+        font-weight: bold;
+        width: 30%; /* Adjust column width as needed */
+    }
+
+    #productOptions td:last-child {
+        width: 70%; /* Adjust column width as needed */
+    }
+
+    #productOptions select {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 14px;
+        color: #333;
+        background-color: white;
+        transition: border-color 0.3s ease-in-out;
+    }
+
+        #productOptions select:focus {
+            outline: none;
+            border-color: #3498db;
+        }
+
+    /* Optional: Add some margin below the table */
+    #productOptions + br {
+        margin-bottom: 20px;
+    }
+
+/* Styling for the product part sections */
+.product-part-section {
+    margin-bottom: 30px;
+}
+
+    .product-part-section h2 {
+        font-size: 24px;
+        color: #333;
+        margin-bottom: 10px;
+    }
+
+.products-partt {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.products-partt li {
+    width: calc(23.33% - 20px); /* Adjust this value to control the width of each item */
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.products-partt li:hover {
+    background-color: #e0e0e0;
+}
+
+/* Styling for the product images */
+.productPartItem {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Add more styling or effects as needed */
